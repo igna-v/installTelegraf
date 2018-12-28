@@ -1,0 +1,5 @@
+-
+	name: instalar telegraf
+	hosts: test
+	roles: 
+		- { role: dj-wasabi.telegraf }
