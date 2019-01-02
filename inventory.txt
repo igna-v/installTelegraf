@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 test1 ansible_host=192.168.11.110 ansible_connection=ssh ansible_user=root ansible_ssh_pass=osboxes.org
 test2 ansible_host=192.168.11.136 ansible_connection=ssh ansible_user=root ansible_ssh_pass=osboxes.org
 [PC]
 test1
 test2
+=======
+#completar lo que este entre ""
+#"PC_name" ansible_host="direccion" ansible_connection=ssh ansible_user=root ansible_ssh_pass="rootpsw"
+#"PC_name2" ansible_host="direccion" ansible_connection=ssh ansible_user=root ansible_ssh_pass="rootpsw"
+#las que hagan falta
+#[PCaInstalar]
+#PC_name
+#PC_name2
+#....
+>>>>>>> 8712dd1c2f2b127a293b92041d4d3770ad0b12f0
