@@ -24,9 +24,10 @@ telegraf_agent_quiet: False
 telegraf_agent_logfile: ""
 telegraf_agent_omit_hostname: False
 
+
 telegraf_global_tags:
-  - tag_name: host
-    tag_value: target1
+  - tag_name: hoster
+    tag_value: "{{inventory_hostname}}"
     
 telegraf_agent_output:
   - type: influxdb
