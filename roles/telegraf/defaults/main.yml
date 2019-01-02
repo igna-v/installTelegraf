@@ -32,8 +32,8 @@ telegraf_global_tags:
 telegraf_agent_output:
   - type: influxdb
     config:
-      - urls = ["http://192.168.10.177:8086"]
-      - database = "testing"
+      - urls = ["{{influxIp}}"]
+      - database = "{{influxDatabase}}"
       - precision = "s"
 
 # defaults - /etc/telegraf/telegraf.conf

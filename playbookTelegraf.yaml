@@ -1,5 +1,9 @@
 -
  name: instalar telegraf
- hosts: test
+ hosts: PC
+
+ vars:
+  influxIp: http://192.168.10.177:8086
+  influxDatabase: testing
  roles: 
    - { role: telegraf }
