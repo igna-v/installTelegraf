@@ -1,11 +1,13 @@
 ---
 # defaults file for ansible-telegraf
 
-telegraf_agent_version: 1.9.1
+
+#Pongo la version en el inventario !!!!
+#telegraf_agent_version: 1.9.4
 telegraf_agent_version_patch: 1
 telegraf_agent_package: telegraf
 telegraf_agent_package_state: present
-telegraf_agent_hostname: "{{ ansible_fqdn }}"
+telegraf_agent_hostname: "{{ inventory_hostname }}"
 telegraf_agent_interval: 10
 telegraf_agent_debug: False
 telegraf_agent_round_interval: True
@@ -25,9 +27,6 @@ telegraf_agent_logfile: ""
 telegraf_agent_omit_hostname: False
 
 
-telegraf_global_tags:
-  - tag_name: hoster
-    tag_value: "{{inventory_hostname}}"
     
 telegraf_agent_output:
   - type: influxdb
