@@ -1,3 +1,4 @@
+
 #"name" ansible_host="xxx.xxx.xxx.xxx " ansible_connection="ssh/winrm" ansible_user="user" ansible_ssh_pass="pass"
 [PCWindows]
 "nameWindows"
